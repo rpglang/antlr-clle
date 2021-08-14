@@ -17,7 +17,7 @@ public class Main {
 
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         CLLEParser parser = new CLLEParser(tokens);
-        ParseTree parseTree = parser.expr();
+        ParseTree parseTree = parser.cl_command();
 
         ParseTreeWalker walker = new ParseTreeWalker();
         walker.walk(new MyListener(), parseTree);
