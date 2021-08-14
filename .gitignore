@@ -1,4 +1,7 @@
 .idea/
+build/
+gen/
+gradle/
 target/
 *.classpath
 *.iml
