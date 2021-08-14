@@ -20,11 +20,11 @@ class LexerUnitTest {
         assertEquals(tokenSize, tokens.size) // includes EOF
         assertEquals(CLLELexer.SLASHES, tokens[0].type)
         assertEquals(CLLELexer.QUESTION_MARK, tokens[1].type)
-        assertEquals(CLLEParser.RULE_label, tokens[2].type)
+        assertEquals(CLLELexer.SPLAT_SNAME, tokens[2].type)
         assertEquals(CLLELexer.COLON, tokens[3].type)
-        assertEquals(CLLEParser.RULE_library, tokens[4].type)
+        assertEquals(CLLELexer.SPLAT_SNAME, tokens[4].type)
         assertEquals(CLLELexer.SLASH, tokens[5].type)
-        assertEquals(CLLEParser.RULE_command, tokens[6].type)
+        assertEquals(CLLELexer.SPLAT_SNAME, tokens[6].type)
 //        assertEquals(CLLEParser.RULE_parameters, tokens[7].type)
     }
 }

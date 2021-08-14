@@ -16,9 +16,9 @@ command:  SPLAT_SNAME;
 //parameters: 'parms';
 cl_variable_name: AMPERSAND SPLAT_SNAME;
 
-SPLAT_NAME: [$#@a-zA-Z] [._$#@a-zA-Z0-9]* ; // Basic Name
-SPLAT_NAME_QUOTED: DOUBLE_QUOTE? ~[*?'"]+ DOUBLE_QUOTE? ; // Basic Name Quoted form
-SPLAT_SNAME: [$#@a-zA-Z][_$#@a-zA-Z0-9]* ; // Simple Name
+//SPLAT_NAME: [$#@a-zA-Z] [._$#@a-zA-Z0-9]* ; // Basic Name
+//SPLAT_NAME_QUOTED: DOUBLE_QUOTE? ~[*?'"]+ DOUBLE_QUOTE? ; // Basic Name Quoted form
+SPLAT_SNAME: [$#@a-zA-Z] [_$#@a-zA-Z0-9]*; // Simple Name
 //SPLAT_PNAME: // Path Name
 
 COLON: ':';
