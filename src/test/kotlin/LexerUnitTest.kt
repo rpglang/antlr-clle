@@ -7,13 +7,13 @@ import utils.TestUtils
  */
 class LexerUnitTest {
 
-    private val testUtils = TestUtils();
+    private val testUtils = TestUtils()
 
     @Test
     fun testCLCommandSyntax() {
 //      [//] [?] [label-name:][library-name/]command-name [parameter-set]
-        val tokens = testUtils.getTokensFromText("// ? lblnme : libnme / cmdnme"); // parms");
-        val tokenSize = 9;
+        val tokens = testUtils.getTokensFromText("// ? lblnme : libnme / cmdnme") // parms");
+        val tokenSize = 8
 
         tokens.asSequence().forEach { token -> println(token.type.toString() + " -> "+token.text) }
 
